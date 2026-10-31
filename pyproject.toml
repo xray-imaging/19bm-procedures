@@ -40,7 +40,7 @@ dev = [
 [project.urls]
 Homepage = "https://github.com/xray-imaging/19bm-procedures"
 "Issue tracker" = "https://github.com/xray-imaging/19bm-procedures/issues"
-"19-BM procedures docs" = "https://img.xray.aps.anl.gov/source/internal/19bm/Procedures/procedures_001.html"
+"Writing a procedure" = "https://github.com/xray-imaging/19bm-procedures/blob/main/CONTRIBUTING.md"
 "2-BM equivalent" = "https://github.com/xray-imaging/2bm-procedures"
 
 [tool.setuptools.packages.find]
