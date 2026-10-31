@@ -1,0 +1,48 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "19bm-procedures"
+version = "0.0.1"
+description = "Executable Python procedures for the APS 19-BM FACT imaging beamline."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [
+    { name = "Francesco De Carlo" },
+]
+keywords = ["aps", "19-bm", "fact", "tomography", "beamline", "epics", "procedures"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering",
+]
+dependencies = [
+    "pyepics>=3.5",
+    "numpy>=1.24",
+]
+
+[project.optional-dependencies]
+pva = [
+    "pvapy>=5.3",  # PV Access client, needed by read_detector_image
+]
+dev = [
+    "pytest>=7",
+]
+
+[project.urls]
+Homepage = "https://github.com/decarlof/19bm-procedures"
+"Issue tracker" = "https://github.com/decarlof/19bm-procedures/issues"
+"19-BM procedures docs" = "https://img.xray.aps.anl.gov/source/internal/19bm/Procedures/procedures_001.html"
+"2-BM equivalent" = "https://github.com/decarlof/2bm-procedures"
+
+[tool.setuptools.packages.find]
+include = ["procedures*"]
+exclude = ["tests*"]
