@@ -7,7 +7,7 @@ documentation, under *19-BM Internal docs -> Procedures*
 this repository carries the executable implementation.
 
 Structured after the 2-BM equivalent at
-https://github.com/decarlof/2bm-procedures.
+https://github.com/xray-imaging/2bm-procedures.
 """
 
 __version__ = "0.0.1"
