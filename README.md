@@ -9,7 +9,7 @@ for each one lives in the IMG internal documentation under
 implementation.
 
 Structured after the 2-BM equivalent,
-[`2bm-procedures`](https://github.com/decarlof/2bm-procedures), so a
+[`2bm-procedures`](https://github.com/xray-imaging/2bm-procedures), so a
 procedure written for one beamline reads the same way at the other.
 
 ## Layout
