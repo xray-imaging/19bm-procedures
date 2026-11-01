@@ -27,6 +27,7 @@ classifiers = [
 dependencies = [
     "pyepics>=3.5",
     "numpy>=1.24",
+    "pillow>=9",  # JPEG decode, needed by read_webcam_images
 ]
 
 [project.optional-dependencies]
